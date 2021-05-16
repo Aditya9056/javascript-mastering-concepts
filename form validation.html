@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title> Javascript Learning</title>
+
+</head>
+
+<body bgcolor = "gray">
+                     
+                <form onsubmit="validate()" method ="POST">
+                Number: <input type ="number" id ="n1"/>
+                <br/><br/>
+                &nbsp;&nbsp;&nbsp; Name: <input type ="text" id = "n2" />
+                    
+                <br/><br/><br/>
+                <input type ="submit" value ="submit" />
+            
+                </form>
+</body>
+<script>
+    function validate(){
+
+        var n2 = document.getElementById("n2");
+        if(n2.value != "")
+        {
+            alert('submitter Successfully.');
+            return true;
+        }
+        else
+        {
+            alert('Please Enter Name');
+            return false;
+        }
+    }
+    
+</script>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title> Hello GUys</title> 
+</head>
+
+<body bgcolor = "gray">
+
+    <button type = "button" onclick="jsfunction()"><b>Butoon1</b></button>
+
+    <button type ="button" onclick="changestyle()"><b>Butoon2</b></button>
+
+    <p id = "content">Button1</p>
+
+    <p id = "lawda"></p>
+
+    <span id = "je"></span>
+
+    <span id = "Audi"> Hello </br></span>
+    <span id = "Aui"> Hello </span>
+     <span id = "Aud"> Hello</span>
+     <span id = "Adi"> Hello</span> 
+     <span id = "rubi"></span>
+    <script>
+          
+
+        var a = function(a,b){return a+b};
+
+        var car = { 
+            
+            make: "Audi",
+
+            model: "RS89",
+
+            info: function(){
+                return this.make +" "+ this.model;
+            }
+        }
+
+        //this is a keyword.
+
+        function he()
+        {
+            return this;
+        }
+
+        function hb(a,b,c)
+        {
+
+            return arguments[1];
+        }
+
+        function caro(a,b)
+        {   
+            this.make = a;
+            this.model = b;
+        }
+
+
+         var z = new caro("ROLA","Royace");
+        
+
+        
+
+         var s = new caro("shiva","mahesa");
+        
+
+
+        function carf(make, model)
+        {
+            this.makeName = make;
+
+            this.makeModel = model;
+
+        }
+
+            var car1 = new carf("BMW","365s");
+
+            var car2 = new carf("Audi","550i");
+
+
+        //In Javascript Everything can be a Object.
+        //Primitive Type Declared as Object do not use frequently or it will slow down.
+
+
+
+
+         //document.getElementById("lawda").innerHTML=a(2,2);
+
+         //document.getElementById("je").innerHTML=hb(1,8,6);
+
+    
+         document.getElementById("Audi").innerHTML = car.info();
+
+         document.getElementById("Aui").innerHTML = he();
+    
+         document.getElementById("Aud").innerHTML = s.make;
+        
+         document.getElementById("Adi").innerHTML = car1.makeName;
+
+        
+         
+        // var namess = new string("Ajay");
+        // var num12 = new number(1245);
+        // var bool34 = new boolean(true);
+
+        //  document.getElementById("rubi").innerHTML = n;
+
+         
+
+         //self invoking function.
+        
+        // ( function () {
+        //     document.getElementById("Adi").innerHTML="It's Called Power.";
+        // }
+        // )();
+
+
+
+        //Object
+        //new
+
+
+     </script>
+
+</body>
+
+</html>

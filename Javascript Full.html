@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title> Javascript Learning</title>
+
+</head>
+
+<body bgcolor = "gray">
+
+                       <div id = "demo">
+                           hello
+                           <!-- <p>  
+                               <a href="www.olos.com">
+                                   not here
+                               </a>
+                                Adtitya !!</p>
+
+                           <p> Shreya !!</p> -->
+                       </div>
+                                                     
+      
+
+
+    </body>
+
+    <script>    
+            var x = 38%5;
+            var y = 30;
+            document.write("\n\n<br\><br\><br\>");
+        
+        
+            document.write(x);
+            if(x===y)
+            {
+                document.write("True");
+            }
+            else
+            {
+               document.write("False"); 
+            }
+        
+            var fname = "Aditya ";
+            var lname;
+        
+            document.write("<br/>");
+            lname=prompt("Enter Your Last Name Code Please","Enter Here");
+        
+            if(lname != 'abstar')
+            {
+                alert('Intruder Alert');
+        
+            }
+            else
+            {
+                document.write("Wrong Code!!!");
+                
+            }
+        
+            
+            
+        
+            document.write('\n');
+            document.write("Hi "+ fname );
+           
+        
+            var i = 0;
+            var t;
+        
+            document.write("<br\>");
+            
+            for(i=0, t=9; i<10; i++)
+            {
+                document.write("<br\>For Loop &nbsp");
+                document.write(t-i);
+            }
+        
+        
+            //function
+        
+            function alpha(name)
+            {
+                alert("Hi "+ name);
+            }
+            
+        
+            alpha("Aditya");
+        
+         
+        
+            //var s = confirm("DO YOU REALLY WANT TO ENTER THIS WEBSITE ?");
+        
+        
+            var person = {
+                 name: "Adi", class:"Star",height:"6 ft"
+            };
+        
+            document.write("\n\n<br\><br\><br\>");
+        
+            document.write(person.height);
+        
+        
+            function obc(name, clas)
+            {
+                this.name = name;
+                this.class = clas;
+            }
+        
+            var ajay = new obc("Ajay", "Star 2");
+        
+            document.write("\n\n<br\><br\><br\>");
+        
+            document.write(ajay.name);
+        
+            function method(name, clas)
+            {
+                this.name = name;
+                this.class = clas;
+                 this.changename = cname;
+            }
+        
+            function cname(name)
+             {
+               this.name = name;
+             }
+        
+            document.write("\n\n<br\><br\><br\>");
+        
+        //method are function that are stored as object properties
+        
+        
+                    var meth = new method("Shivang","Roger");
+        
+            meth.changename("rahil");
+            document.write(meth.name);
+        
+            document.write("\n\n<br\><br\><br\>");
+        
+            //Array
+            //array are dynamic in javascript can be declared without any size
+        
+            var courses = new Array("CSS", "HTML", "Python");
+        
+            var ages = new Array(3);
+        
+            var names = new Array();
+        
+            var alphabets = ["A","B"];
+        
+             names[0] = "raja";
+        
+             //These All Are ways To declare an array in JS
+        
+             var concat = courses.concat(alphabets);
+        
+            document.write(concat[2]);
+        
+            var person = [];
+            
+            person["name"] = "aditya";
+        
+            document.write("\n\n<br\><br\><br\>");
+            
+            //math object
+            
+             var n = prompt("enterno");
+        
+             n = Math.sqrt(n);
+        
+             alert("the answer is"+n);
+        
+            document.write(Math.random()*1000);
+        
+            function we()
+             {
+                document.write("You're Hacked!!! \n ");
+             }
+        
+                var dat = new Date("jul 20, 2018 18:20:0000");
+        
+        
+                var dat = new Date();
+                document.write("\n\n<br\><br\><br\>");
+            
+                //document.write(dat.getHours());
+            //setInterval(we, 3000);
+            //setInterval(me, 3800);
+        
+             //Selecting Elements
+        
+             var ax = document.getElementsByTagName("a");
+             
+            //  var ch = ax.childNodes;
+
+            //  for(i=0;i<ch.length;i++)
+            //  {
+            //      ch[i].innerHTML = "hello";
+            //  }
+        
+             
+             //.child will also count any text and spaces
+
+             ax[1].href = "www.google.com";
+
+                //CHanging Style
+
+             ax[0].style.color ="yellow";
+
+           var p = document.createElement("p");
+            
+            var node = document.createTextNode("Some New Text");
+            
+            p.appendChild(node);
+
+            var ele = document.getElementById("demo");
+
+            ele.appendChild(p);
+       document.write("THis is Not GOod!");
+  
+
+       
+ </script> 
+
+</html>
