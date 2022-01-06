@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title> Hello GUys</title> 
+</head>
+
+<body bgcolor = "red">
+<!-- 
+    <button type = "button" onclick="jsfunction()"><b>Benchod</b></button>
+
+    <button type ="button" onclick="changestyle()"><b>Bosda</b></button> -->
+
+    <p id = "content"></p>
+    <p id = "lawda"></p>
+
+    <span id = "je"></span>
+
+    <span id = "Audi">  </br></span>
+    <span id = "Aui">  </span>
+     <span id = "Aud"> </span>
+     <span id = "Adi"> </span> 
+     <span id = "rubi"></span>
+    <script>
+          
+    var car = {
+
+        make: "BMW",
+
+        model: "520s",
+
+        color: "red"
+    };
+
+ 
+    
+    var a = car;
+
+    
+
+         document.getElementById("Audi").innerHTML = car.model;
+
+          document.getElementById("Aui").innerHTML = a;
+    
+        
+        
+       
+
+
+        //Ways TO Access A object Properties
+
+        
+         document.getElementById("Aud").innerHTML = car.make + " " +car["model"];;
+        
+         
+
+         delete car.model;
+        var x,temp;
+        for(x in car)
+        {   
+            temp+=" "+car[x]+" ";
+        }
+        car.speed ="400km/h"; 
+        
+        
+
+
+         document.getElementById("Adi").innerHTML = temp +" "+car.speed;
+    
+    
+     </script>
+
+    </html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title> Javascript Learning</title>
+
+</head>
+
+<body bgcolor = "gray">
+                     
+                
+</body>
+
+<script>
+//function
+const beta = (p, v) =>{
+    let ts=p*v;
+    document.write(ts);
+}
+
+const addw=(x, y) =>{
+    let sum =x+y;
+    document.write('<br/>'+sum);
+}
+beta(5,2);
+
+//with One Arguement
+
+const r =()=>
+document.write('heelo');
+alert('Hello');
+
+
+r();
+
+
+var arr =[2,5,3,2];
+
+arr.forEach(ele=>{
+    console.log(ele*2);
+});
+
+
+const w= (y=22) =>{
+    console.log (y*2);
+}
+
+
+w(23);
+
+
+
+// document.write(msg);
+
+// console.log(msg);
+
+
+
+let tree ={
+    height: 10,
+    color: 'green',
+    grow(){
+        this.height += 2;
+    }
+};
+
+tree.grow();
+document.write('<br />');
+
+document.write(tree.height);
+
+
+let power = 100;
+
+let player ={
+    power
+};
+
+document.write(player.power);
+
+var a = {x: 1, x: 4, b:1};
+
+document.write(a.b);
+
+
+
+let prop = 'name';
+let id = '1234';
+let mobile = '89332';
+
+
+let user ={
+    [prop]: 'Ron',
+
+    [`user_${id}`]: '134'
+};
+
+document.write("<br />"+user.user_1234);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>
